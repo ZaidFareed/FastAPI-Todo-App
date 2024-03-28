@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "fastapi-neon"
+version = "0.1.0"
+description = ""
+authors = ["ZaidFareed <zaydfareed094@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.28.0"}
+sqlmodel = "^0.0.16"
+psycopg = {extras = ["binary"], version = "^3.1.18"}
+streamlit = "^1.32.2"
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+types-python-jose = "^3.3.4.20240106"
+python-multipart = "^0.0.9"
+psycopg2-binary = "^2.9.9"
+bcrypt = "^4.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+types-python-jose = "^3.3.4.20240106"
+types-passlib = "^1.7.7.20240311"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
